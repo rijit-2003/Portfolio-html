@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.auto-type {
+    color: yellow;
+}
+
+.logo {
+    font-size: 30px;
+    width: 10px;
+    display: inline-block;
+}
+
+.logo span {
+    color: #ff004f;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: turquoise;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin: 20%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.introimage {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 35%;
+}
+
+.introimage img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.header-text h1 {
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.header-text h3 {
+    font-size: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+#about {
+    padding: 80px;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tabtitles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tablinks {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 5000;
+    cursor: pointer;
+    position: relative;
+}
+
+.about-col-2 h1 {
+    color: lightgreen;
+    font-family: 'poppins' sans-serif;
+}
+
+.about-col-2 p {
+    font-size: 19px;
+    color: turquoise;
+    font-family: 'poppins' sans-serif;
+}
+
+.about-col-2 p a {
+    font-size: 19px;
+    color: #ff004f;
+    font-family: 'poppins' sans-serif;
+    text-decoration: none;
+}
+
+.about-col-2 span {
+    text-align: center;
+}
+
+#education h1 {
+    padding: 40px;
+    text-align: center;
+    color: lightgreen font-family: 'poppins' sans-serif;
+}
+
+.head {
+    color: lightgreen;
+    align-items: center;
+}
+
+.rowedu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.educol1 {
+    flex-basis: 47.5%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: turquoise;
+}
+
+.educol2 {
+    flex-basis: 47.5%;
+    color: turquoise;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.rowedu p {
+    font-size: 18px;
+}
+
+#skills {
+    padding: 40px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.rowskill {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.skillcol1 {
+    flex-basis: 47.5%;
+    text-align: center;
+    color: aquamarine;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillcol2 {
+    flex-basis: 47.5%;
+    text-align: center;
+    color: aquamarine;
+    list-style: none;
+    align-items: center;
+}
+
+.rowskill ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    color: aquamarine;
+}
+
+.skillcol3 {
+    flex-basis: 100%;
+    text-align: center;
+    color: aquamarine;
+    list-style: none;
+    align-items: center;
+}
+
+#contact h1 {
+    padding: 40px;
+    text-align: center;
+    color: lightgreen font-family: 'poppins' sans-serif;
+}
+
+.conleft p {
+    margin: 50px;
+}
+
+.rowcon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.conleft {
+    flex-basis: 47.5%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ff004f;
+}
+
+.conright {
+    flex-basis: 40%;
+}
+
+.social p a {
+    font-size: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    margin: 20px 25px;
+}
+.conleft h2 {
+    font-size: 25px;
+    margin: 20px 50px;
+    color: lightpink;
+}
+.email{
+    color: #ff004f;
+    font-size: 20px;
+}
+.contactme{
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conright img {
+    width: 50%;
+    border-radius: 15px;
+}
