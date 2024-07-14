@@ -389,3 +389,110 @@ nav ul li a:hover::after {
 .compskills h3 {
     color: palevioletred;
 }
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 10px 5%;
+    }
+    
+    .header-text {
+        margin: 15%;
+        font-size: 24px;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+
+    .header-text h3 {
+        font-size: 18px;
+    }
+
+    .introimage {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px 2%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-text {
+        margin: 10%;
+        font-size: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text h3 {
+        font-size: 16px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .rowskill {
+        flex-direction: column;
+    }
+
+    .skillcol1, .skillcol2 {
+        flex-basis: 100%;
+    }
+    
+    .conleft p {
+        margin: 20px;
+    }
+
+    .conleft h2 {
+        font-size: 20px;
+    }
+
+    .conright img {
+        width: 100%;
+    }
+
+    .conright p {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 1%;
+    }
+
+    .header-text {
+        margin: 5%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text h3 {
+        font-size: 14px;
+    }
+
+    .about-col-1 img, .about-col-2 img, .conright img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .rowskill ul li {
+        font-size: 16px;
+    }
+}
