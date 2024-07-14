@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -17,6 +17,23 @@ body {
     background-position: center;
 }
 
+.mypic img {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: animate 8s ease-in-out infinite 0.004s;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/60% 30% 70% 40%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
 .container {
     padding: 10px 10%;
 }
@@ -26,6 +43,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 60px;
+    color: antiquewhite;
+    background-color: aliceblue;
+}
+
+.navbar {
+    padding: 10px 10%;
+    color: aqua;
+    background-color: #1a5765;
 }
 
 .auto-type {
@@ -34,12 +60,20 @@ nav {
 
 .logo {
     font-size: 30px;
-    width: 10px;
     display: inline-block;
+    margin-left: 30px;
 }
 
 .logo span {
-    color: #ff004f;
+    color: yellow;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -52,6 +86,7 @@ nav ul li a {
     color: turquoise;
     text-decoration: none;
     font-size: 15px;
+    position: relative;
 }
 
 nav ul li a::after {
@@ -72,8 +107,7 @@ nav ul li a:hover::after {
 .header-text {
     margin: 20%;
     font-size: 30px;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .introimage {
@@ -98,10 +132,11 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: #ff004f;
+    font-weight: 200;
 }
 
 #about {
-    padding: 80px;
+    padding: 80px 10%;
     color: #ababab;
 }
 
@@ -145,36 +180,28 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 h1 {
-    color: lightgreen;
-    font-family: 'poppins' sans-serif;
+    color: navy;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-col-2 p {
     font-size: 19px;
-    color: turquoise;
-    font-family: 'poppins' sans-serif;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-col-2 p a {
     font-size: 19px;
-    color: skyblue;
-    font-family: 'poppins' sans-serif;
+    color: cyan;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-}
-
-.about-col-2 span {
-    text-align: center;
 }
 
 #education h1 {
     padding: 40px;
     text-align: center;
-    color: lightgreen font-family: 'poppins' sans-serif;
-}
-
-.head {
-    color: lightgreen;
-    align-items: center;
+    color: navy;
+    font-family: 'Poppins', sans-serif;
 }
 
 .rowedu {
@@ -187,22 +214,33 @@ nav ul li a:hover::after {
     flex-basis: 47.5%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: turquoise;
+    color: white;
+}
+
+.educol1 h2 {
+    color: white;
 }
 
 .educol2 {
     flex-basis: 47.5%;
-    color: turquoise;
+    color: white;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.rowedu p {
-    font-size: 18px;
+.educol2 h2 {
+    color: white;
 }
 
+.rowedu p {
+    font-size: 18px;
+    color: white;
+}
+.rowedu p a{
+    color: white;
+}
 #skills {
-    padding: 40px;
+    padding: 40px 10%;
     font-family: monospace;
     text-align: center;
 }
@@ -212,49 +250,35 @@ nav ul li a:hover::after {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-
 }
 
-.skillcol1 {
-    flex-basis: 47.5%;
+.skillcol1, .skillcol2, .skillcol3 {
     text-align: center;
-    color: aquamarine;
+    color: rgb(50, 151, 117);
     list-style: none;
     align-items: center;
-    justify-content: center;
 }
 
-.skillcol2 {
+.skillcol1, .skillcol2 {
     flex-basis: 47.5%;
-    text-align: center;
-    color: aquamarine;
-    list-style: none;
-    align-items: center;
+}
+
+.skillcol3 {
+    flex-basis: 100%;
 }
 
 .rowskill ul li {
     list-style: none;
     text-align: center;
     font-size: 18px;
-    color: aquamarine;
-}
-
-.skillcol3 {
-    flex-basis: 100%;
-    text-align: center;
-    color: aquamarine;
-    list-style: none;
-    align-items: center;
+    color: white;
 }
 
 #contact h1 {
     padding: 40px;
     text-align: center;
-    color: lightgreen font-family: 'poppins' sans-serif;
-}
-
-.conleft p {
-    margin: 50px;
+    color: navy;
+    font-family: 'Poppins', sans-serif;
 }
 
 .rowcon {
@@ -265,14 +289,62 @@ nav ul li a:hover::after {
 }
 
 .conleft {
-    flex-basis: 47.5%;
+    flex-basis: 100%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #ff004f;
 }
 
+.conleft p {
+    margin: 50px;
+}
+
+.conleft h2 {
+    font-size: 25px;
+    margin: 20px 50px;
+}
+
+.conleft h4 {
+    text-decoration: none;
+    color: red;
+    margin: 50px;
+    text-align: center;
+}
+
+.email {
+    color: #ff004f;
+    font-size: 20px;
+}
+
+.contactme {
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .conright {
-    flex-basis: 40%;
+    flex-basis: 0%;
+    text-align: left;
+}
+
+.conright img {
+    width: 60%;
+    border-radius: 15px;
+}
+
+.conright p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(163, 29, 29);
+    width: 300px;
+    border: 1px solid;
+    padding: 50px;
+    margin: 20px;
+}
+
+.rowedu p a {
+    text-decoration: none;
+    color: turquoise;
 }
 
 .social p a {
@@ -281,20 +353,147 @@ nav ul li a:hover::after {
     text-decoration: none;
     margin: 20px 25px;
 }
-.conleft h2 {
-    font-size: 25px;
-    margin: 20px 50px;
-    color: lightpink;
+
+.bottom-container {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
 }
-.email{
-    color: #ff004f;
-    font-size: 20px;
+
+#projects h1 {
+    padding: 40px;
+    text-align: center;
+    color: lightgreen;
+    font-family: 'Poppins', sans-serif;
 }
-.contactme{
-    color: beige;
-    font-family: Arial, Helvetica, sans-serif;
+
+.compskills {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.conright img {
-    width: 60%;
-    border-radius: 15px;
+
+.compskills h1 {
+    color: navy;
+}
+
+.compskills p {
+    margin: 50px;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+}
+.compskills a{
+    margin: 50px;
+}
+.compskills h3 {
+    color: palevioletred;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 10px 5%;
+    }
+    
+    .header-text {
+        margin: 15%;
+        font-size: 24px;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+
+    .header-text h3 {
+        font-size: 18px;
+    }
+
+    .introimage {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px 2%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-text {
+        margin: 10%;
+        font-size: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text h3 {
+        font-size: 16px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .rowskill {
+        flex-direction: column;
+    }
+
+    .skillcol1, .skillcol2 {
+        flex-basis: 100%;
+    }
+    
+    .conleft p {
+        margin: 20px;
+    }
+
+    .conleft h2 {
+        font-size: 20px;
+    }
+
+    .conright img {
+        width: 100%;
+    }
+
+    .conright p {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 1%;
+    }
+
+    .header-text {
+        margin: 5%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text h3 {
+        font-size: 14px;
+    }
+
+    .about-col-1 img, .about-col-2 img, .conright img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .rowskill ul li {
+        font-size: 16px;
+    }
 }
