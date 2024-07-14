@@ -7,24 +7,30 @@
     <title>Rijit Banerjee</title>
     <link rel="stylesheet" href="styles.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9908da2292.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            background-color: rgb(16, 111, 37);
+        }
+    </style>
 </head>
+<nav class="navbar">
+    <h2 class="logo"><span> R</span>ijitBanerjee<span>.</span></h2>
 
-<body style="background-color: #003441;">
+    <ul>
+        <li><a href="#header">Home <i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#about">About <i class="fa-regular fa-address-card"></i></a></li>
+        <li><a href="#education">Education <i class="fa-solid fa-school"></i></a></li>
+        <li><a href="#skills">Skills <i class="fa-solid fa-brain"></i></a></li>
+        <li><a href="#contact">Contact <i class="fa-solid fa-phone"></i></a></li>
+    </ul>
+</nav>
+
+<body style="background-color: turquoise;">
     <div id="header">
-        <div class="container">
-            <nav>
-                <h2 class="logo"><span> R</span>ijitBanerjee<span>.</span></h2>
-
-                <ul>
-                    <li><a href="#header">Home <i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#about">About <i class="fa-regular fa-address-card"></i></a></li>
-                    <li><a href="#education">Education <i class="fa-solid fa-school"></i></a></li>
-                    <li><a href="#skills">Skills <i class="fa-solid fa-brain"></i></a></li>
-                    <li><a href="#contact">Contact <i class="fa-solid fa-phone"></i></a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
+        <div class="container" style="display:flex;">
+            <div class="header-text" style="flex:3">
                 <h1>Hi, I'm <span>Rijit</span></h1>
                 <p>I'm a <span class="auto-type"></span></p>
                 <br>
@@ -32,13 +38,16 @@
                         href="https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5354273,88.3473527,12z/data=!3m1!4b1!4m6!3m5!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895!16zL20vMGN2dzk?entry=ttu"><i
                             class="fa-solid fa-location-dot"></i></a> Kolkata, India</h3>
             </div>
+            <!-- <div class="mypic" style="flex:2;margin-top:10em;" >
+                <img src="images/mypic.jpg" style="width:25em" alt="">
+            </div> -->
         </div>
     </div>
-    <div id="about">
+    <div id="about" style="background-color: turquoise;">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/mypic3.jpg">
+                    <img src="images/mypic2.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="typo">About Me</h1>
@@ -57,14 +66,15 @@
                         the boundaries of what's possible.</p>
                     <br>
                     <span>
-                        <p><a href="https://drive.google.com/file/d/1_MiwcwgUjsbqFn6blec6Jwec4u1rGbZ1/view?usp=sharing"><i
+                        <p><a href="https://drive.google.com/file/d/1FTBRKEa5pHuAMIwC-IInr2gus1T0gybY/view?usp=sharing"><i
                                     class="fa-regular fa-file"></i> Resume</a></p>
                     </span>
                 </div>
             </div>
         </div>
+        <hr height="3px">
     </div>
-    <div id="education" style="background-color: #002d39;">
+    <div id="education" style="background-color: turquoise;">
         <div class="head">
             <h1 class="typo">Education</h1>
         </div>
@@ -75,8 +85,8 @@
                 <p>Bachelor of Civil Engineering (2021-2025) || Pursuing</p>
                 <br>
                 <p><a
-                        href="https://www.google.com/maps/place/Jadavpur+University/@22.4988822,88.2951946,13z/data=!4m10!1m2!2m1!1sjadavpur+university+google+maps!3m6!1s0x3a0271237f28abe9:0xd047bab0c8bfb11c!8m2!3d22.4988822!4d88.3714123!15sCh9qYWRhdnB1ciB1bml2ZXJzaXR5IGdvb2dsZSBtYXBzIgOIAQGSAQp1bml2ZXJzaXR54AEA!16zL20vMDQ2dm0?entry=ttu"></a><i
-                        class="fa-solid fa-location-dot"></i> Kolkata</p>
+                        href="https://www.google.com/maps/place/Jadavpur+University/@22.4988822,88.2951946,13z/data=!4m10!1m2!2m1!1sjadavpur+university+google+maps!3m6!1s0x3a0271237f28abe9:0xd047bab0c8bfb11c!8m2!3d22.4988822!4d88.3714123!15sCh9qYWRhdnB1ciB1bml2ZXJzaXR5IGdvb2dsZSBtYXBzIgOIAQGSAQp1bml2ZXJzaXR54AEA!16zL20vMDQ2dm0?entry=ttu"><i
+                        class="fa-solid fa-location-dot"></i> Kolkata</a></p>
             </div>
             <div class="educol2">
                 <h2>Nava Nalanda High School</h2>
@@ -86,15 +96,15 @@
                 <p>Secondary - 91 % (2008-2019) || Completed</p>
                 <br>
                 <p><a
-                        href="https://www.google.com/maps/place/Nava+Nalanda+Group+of+Schools/@22.5143525,88.3472027,17z/data=!3m1!4b1!4m6!3m5!1s0x3a02712b16ea7fed:0x9f1144e27da5dc94!8m2!3d22.5143525!4d88.3472027!16s%2Fm%2F06zkcml?entry=ttu"></a><i
-                        class="fa-solid fa-location-dot"></i> Kolkata</p>
+                        href="https://www.google.com/maps/place/Nava+Nalanda+Group+of+Schools/@22.5143525,88.3472027,17z/data=!3m1!4b1!4m6!3m5!1s0x3a02712b16ea7fed:0x9f1144e27da5dc94!8m2!3d22.5143525!4d88.3472027!16s%2Fm%2F06zkcml?entry=ttu"><i
+                        class="fa-solid fa-location-dot"></i> Kolkata</a></p>
                 <br><br><br><br>
             </div>
         </div>
     </div>
-    <div id="skills" style="background-color: #002730">
+    <div id="skills" style="background-color: turquoise">
         <div class="head">
-            <h1>Skills</h1><br><br><br>
+            <h1 class="typo" style="color: navy;">Skills</h1><br><br><br>
         </div>
         <div class="rowskill">
             <div class="skillcol1">
@@ -116,7 +126,6 @@
                     <li>PostgreSQL</li><br>
                     <li>MongoDB</li><br>
                     <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li><br>
-                    <li>Tailwind CSS</li><br>
                 </ul>
             </div>
             <br><br>
@@ -127,48 +136,72 @@
                     <li>Numerical Methods</li><br>
                     <li>Artificial Intelligence</li><br>
                     <li>Machine Learning</li><br>
-                    <li>Object Oriented Programming</li><br>
-                    <li>Data Structures and Algorithms</li>
                 </ul>
             </div>
-            <div class="skillcol4">
+        </div>
+        <div class="compskills">
+            <h1 class="typo">Competetive Programming</h1>
+            <p>I am very much passionate about Competetive Coding and Problem Solving.<br><br>I am rated 1600 at Leetcode which puts me at to 20% of all Leetcode users Worldwide.<br><br>I am rated 1747 at Codechef which makes me a 3 star Coder.</p>
+            <a href="https://leetcode.com/rijitb" target="_blank"><img src="images/leetcode (1).png" alt="LeetCode Profile"></a>
+<a href="https://codeforces.com/profile/rijitbanerjee08" target="_blank"><img src="images/code-forces (1).png" alt="Codeforces Profile"></a>
+<a href="https://www.codechef.com/users/rijitbanerjee0" target="_blank"><img src="images/codechef (1).png" alt="CodeChef Profile"></a>
 
-            </div>
         </div>
     </div>
-    <div id="contact" style="background-color: #003441">
+    <div id="projects" style="background-color: turquoise;">
+        <!-- <div class="head">
+            <h1 class="projects" class="typo" style="color: #9be915;">Projects</h1><br>
+        </div>
+        <div class="procon">
+            <div class="proleft">
+                <h2>Snake Game</h2>
+                <p>I created a Snake game in Python using PyCharm, featuring classic gameplay where a snake grows longer by eating food, with increasing difficulty as the snake grows.</p>
+            </div>
+            <div class="proright">
+                <h2>Weather Website</h2>
+            </div>
+            <div class="promid">
+                <h2>Portfolio Website</h2>
+            </div>
+        </div> -->
+    </div>
+    <div id="contact" style="background-color: turquoise">
         <div class="head">
-            <h1 class="contactme">Contact Me</h1><br><br><br>
+            <h1 class="contactme" class="typo" style="color: navy;">Get in Touch</h1><br>
         </div>
         <div class="rowcon">
             <div class="conleft">
-                <h2>Email me at</h2>
+                <h2 style="color: rgb(22, 117, 117);">Email me at</h2>
                 <p class="email"><i class="fa-regular fa-envelope"></i> rijitbanerjeejaduniv@gmail.com</p>
                 <div class="social">
-                    <h2>Follow Me On</h2>
+                    <h2 style="color: rgb(22, 117, 117);">Follow Me On</h2>
                     <p><a href="https://www.instagram.com/sergeant_coldheart/"><i class="fa-brands fa-instagram"></i>
-                              Instagram</a></p>
-                    <p><a href="https://www.linkedin.com/in/rijit/"><i class="fa-brands fa-linkedin"></i>   Linkedin</a>
+                            Instagram</a></p>
+                    <p><a href="https://www.linkedin.com/in/rijit/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
                     </p>
-                    <p><a href="https://github.com/rijit-2003"><i class="fa-brands fa-github"></i>   Github</a></p>
+                    <p><a href="https://github.com/rijit-2003"><i class="fa-brands fa-github"></i> Github</a></p>
                 </div>
+                <a href="#header"><h4><i class="fa-brands fa-space-awesome"></i></h4></a>
             </div>
-            <div class="conright">
-                <img src="images/introimage.jpg">
-                <!-- <p>You can contact me through email or via LinkedIn. Any suggestions on my existing work or new projects are always welcome. I typically respond to inquiries within 24-48 hours.</p> -->
-            </div>
+            <!-- <div class="conright"> -->
+                <!-- <img src="images/mypic3.jpg">
+                <p style="color: yellowgreen;">You can contact me through email or via LinkedIn. Any suggestions on my existing work or new projects are always welcome. I typically respond to inquiries within 24-48 hours.</p>
+            </div> -->
         </div>
     </div>
+    <div class="bottom-container">
+        <p class="copyright">© 2023 Rijit Banerjee.</p>
+      </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
             strings: ["Web Developer", "Competetive Programmer", "Problem Solver"],
-            typeSpeed: 150,
-            backSpeed: 100,
+            typeSpeed: 100,
+            backSpeed: 5,
             loop: true
         })
     </script>
-    I
+    I<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
