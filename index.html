@@ -11,7 +11,31 @@
     <script src="https://kit.fontawesome.com/9908da2292.js" crossorigin="anonymous"></script>
     <style>
         .navbar {
-            background-color: rgb(16, 111, 37);
+            background-color: rgb(44, 63, 161);
+        }
+        @keyframes jump {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-15px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Apply the animation to the social media icons */
+        .social a {
+            display: inline-block;
+            margin: 50px;
+            animation: jump 1s infinite;
+            transition: color 0.3s ease;
+        }
+
+        /* Change color to golden on hover */
+        .social a:hover {
+            color: rgb(48, 53, 160);
         }
     </style>
 </head>
@@ -22,6 +46,7 @@
         <li><a href="#header">Home <i class="fa-solid fa-house"></i></a></li>
         <li><a href="#about">About <i class="fa-regular fa-address-card"></i></a></li>
         <li><a href="#education">Education <i class="fa-solid fa-school"></i></a></li>
+        <li><a href="#internships">Experience <i class="fa-solid fa-briefcase"></i></a></li>
         <li><a href="#skills">Skills <i class="fa-solid fa-brain"></i></a></li>
         <li><a href="#contact">Contact <i class="fa-solid fa-phone"></i></a></li>
     </ul>
@@ -37,6 +62,7 @@
                 <h3><a
                         href="https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5354273,88.3473527,12z/data=!3m1!4b1!4m6!3m5!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895!16zL20vMGN2dzk?entry=ttu"><i
                             class="fa-solid fa-location-dot"></i></a> Kolkata, India</h3>
+                <br>           
             </div>
             <!-- <div class="mypic" style="flex:2;margin-top:10em;" >
                 <img src="images/mypic.jpg" style="width:25em" alt="">
@@ -66,7 +92,7 @@
                         the boundaries of what's possible.</p>
                     <br>
                     <span>
-                        <p><a href="https://drive.google.com/file/d/1FTBRKEa5pHuAMIwC-IInr2gus1T0gybY/view?usp=sharing"><i
+                        <p class="jumping-resume"><a href="https://drive.google.com/file/d/1FTBRKEa5pHuAMIwC-IInr2gus1T0gybY/view?usp=sharing"><i
                                     class="fa-regular fa-file"></i> Resume</a></p>
                     </span>
                 </div>
@@ -101,6 +127,26 @@
                 <br><br><br><br>
             </div>
         </div>
+    </div>
+    <div id="internships">
+        <div class="head">
+            <h1 class="typo" style="color: navy;">Experience</h1><br>
+            <h2>Summer Research Intern</h2><br>
+            <h3 style="color: white;">Indian Institute of Management, Ranchi</h3><br>
+            <div class="incen">
+                <p><i class="fa-solid fa-bolt"></i> Worked on Machine Learning Models.</p>
+                <p><i class="fa-solid fa-bolt"></i> Learned about Partial Least Squares-Structural Equation Modelling.</p>
+                <p><i class="fa-solid fa-bolt"></i> Contributed to an algorithm to check the robustness of the model.</p>
+            </div>
+        </div>
+    </div>
+    <div class="compskills">
+        <h1 class="typo">Competetive Programming</h1>
+        <p>I am very much passionate about Competetive Coding and Problem Solving.<br><br>I am rated 1600 at Leetcode which puts me at to 20% of all Leetcode users Worldwide.<br><br>I am rated 1747 at Codechef which makes me a 3 star Coder.</p>
+        <a href="https://leetcode.com/rijitb" target="_blank"><img src="images/leetcode (1).png" alt="LeetCode Profile"></a>
+<a href="https://codeforces.com/profile/rijitbanerjee08" target="_blank"><img src="images/code-forces (1).png" alt="Codeforces Profile"></a>
+<a href="https://www.codechef.com/users/rijitbanerjee0" target="_blank"><img src="images/codechef (1).png" alt="CodeChef Profile"></a>
+
     </div>
     <div id="skills" style="background-color: turquoise">
         <div class="head">
@@ -139,14 +185,7 @@
                 </ul>
             </div>
         </div>
-        <div class="compskills">
-            <h1 class="typo">Competetive Programming</h1>
-            <p>I am very much passionate about Competetive Coding and Problem Solving.<br><br>I am rated 1600 at Leetcode which puts me at to 20% of all Leetcode users Worldwide.<br><br>I am a 3 Star Coder at Codechef with a highest rating of 1749.</p>
-            <a href="https://leetcode.com/rijitb" target="_blank"><img src="images/leetcode (1).png" alt="LeetCode Profile"></a>
-<a href="https://codeforces.com/profile/rijitbanerjee08" target="_blank"><img src="images/code-forces (1).png" alt="Codeforces Profile"></a>
-<a href="https://www.codechef.com/users/rijitbanerjee0" target="_blank"><img src="images/codechef (1).png" alt="CodeChef Profile"></a>
-
-        </div>
+        
     </div>
     <div id="projects" style="background-color: turquoise;">
         <!-- <div class="head">
@@ -171,15 +210,15 @@
         </div>
         <div class="rowcon">
             <div class="conleft">
-                <h2 style="color: rgb(22, 117, 117);">Email me at</h2>
+                <!-- <h2 style="color: rgb(22, 117, 117);">Email me at</h2> -->
                 <p class="email"><i class="fa-regular fa-envelope"></i> rijitbanerjeejaduniv@gmail.com</p>
                 <div class="social">
-                    <h2 style="color: rgb(22, 117, 117);">Follow Me On</h2>
-                    <p><a href="https://www.instagram.com/sergeant_coldheart/"><i class="fa-brands fa-instagram"></i>
-                            Instagram</a></p>
-                    <p><a href="https://www.linkedin.com/in/rijit/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                    </p>
-                    <p><a href="https://github.com/rijit-2003"><i class="fa-brands fa-github"></i> Github</a></p>
+                    <!-- <h2 style="color: rgb(22, 117, 117);">Follow Me On</h2><br><br><br> -->
+                    <a href="https://www.instagram.com/sergeant_coldheart/"><i class="fa-brands fa-instagram"></i>
+                            </a>
+                    <a href="https://www.linkedin.com/in/rijit/"><i class="fa-brands fa-linkedin"></i> </a>
+                    
+                    <a href="https://github.com/rijit-2003"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="#header"><h4><i class="fa-brands fa-space-awesome"></i></h4></a>
             </div>
@@ -195,7 +234,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
-            strings: ["Web Developer", "Competetive Programmer", "Problem Solver"],
+            strings: ["Web Developer", "Competetive Programmer", "Problem Solver","M.L. Enthusiast"],
             typeSpeed: 100,
             backSpeed: 5,
             loop: true
