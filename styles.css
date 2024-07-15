@@ -65,7 +65,7 @@ nav {
 }
 
 .logo span {
-    color: yellow;
+    color: turquoise;
 }
 
 nav ul {
@@ -109,7 +109,9 @@ nav ul li a:hover::after {
     font-size: 30px;
     text-align: center;
 }
-
+.header-text p{
+    text-align: center;
+}
 .introimage {
     display: flex;
     justify-content: space-between;
@@ -128,6 +130,7 @@ nav ul li a:hover::after {
 
 .header-text h3 {
     font-size: 20px;
+    text-align: center;
 }
 
 .header-text h1 span {
@@ -191,10 +194,11 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 p a {
-    font-size: 19px;
-    color: cyan;
+    font-size: 20px;
+    color: #ff004f;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    text-align: center;
 }
 
 #education h1 {
@@ -235,6 +239,7 @@ nav ul li a:hover::after {
 .rowedu p {
     font-size: 18px;
     color: white;
+    text-align: center;
 }
 .rowedu p a{
     color: white;
@@ -300,7 +305,7 @@ nav ul li a:hover::after {
 }
 
 .conleft h2 {
-    font-size: 25px;
+    font-size: 35px;
     margin: 20px 50px;
 }
 
@@ -314,6 +319,7 @@ nav ul li a:hover::after {
 .email {
     color: #ff004f;
     font-size: 20px;
+    text-align: center;
 }
 
 .contactme {
@@ -347,14 +353,14 @@ nav ul li a:hover::after {
     color: turquoise;
 }
 
-.social p a {
-    font-size: 20px;
+.social  a {
+    font-size: 50px;
     color: #ff004f;
     text-decoration: none;
-    margin: 20px 25px;
+    margin: 30px;
 }
 
-.bottom-container {
+.copyright {
     text-align: center;
     color: green;
     margin-top: 20px;
@@ -382,6 +388,7 @@ nav ul li a:hover::after {
     font-size: 22px;
     font-weight: 400;
     color: white;
+    text-align: center;
 }
 .compskills a{
     margin: 50px;
@@ -389,110 +396,48 @@ nav ul li a:hover::after {
 .compskills h3 {
     color: palevioletred;
 }
-/* Media Queries for Responsive Design */
-@media (max-width: 1024px) {
-    .container {
-        padding: 10px 5%;
+.jumping-resume {
+    display: inline-block;
+    position: relative;
+    animation: jump 1s infinite;
+}
+.resumecontainer{
+    text-align: center;
+}
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
     }
-    
-    .header-text {
-        margin: 15%;
-        font-size: 24px;
-    }
-
-    .header-text h1 {
-        font-size: 50px;
-    }
-
-    .header-text h3 {
-        font-size: 18px;
-    }
-
-    .introimage {
-        flex-direction: column;
+    50% {
+        transform: translateY(-10px);
     }
 }
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px 2%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .header-text {
-        margin: 10%;
-        font-size: 20px;
-    }
-
-    .header-text h1 {
-        font-size: 40px;
-    }
-
-    .header-text h3 {
-        font-size: 16px;
-    }
-
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
-    }
-
-    .rowskill {
-        flex-direction: column;
-    }
-
-    .skillcol1, .skillcol2 {
-        flex-basis: 100%;
-    }
-    
-    .conleft p {
-        margin: 20px;
-    }
-
-    .conleft h2 {
-        font-size: 20px;
-    }
-
-    .conright img {
-        width: 100%;
-    }
-
-    .conright p {
-        width: 100%;
-        padding: 20px;
-    }
+.icon-container {
+    display: inline-block;
+    margin-right: 20px;
+    animation: popjump 1s infinite alternate;
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 10px 1%;
+@keyframes popjump {
+    0% {
+        transform: translateY(0);
     }
-
-    .header-text {
-        margin: 5%;
-        font-size: 16px;
+    100% {
+        transform: translateY(-10px);
     }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    .header-text h3 {
-        font-size: 14px;
-    }
-
-    .about-col-1 img, .about-col-2 img, .conright img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .rowskill ul li {
-        font-size: 16px;
-    }
+}
+#internships{
+    padding: 40px;
+    text-align: center;
+    color: navy;
+    font-family: 'Poppins', sans-serif;
+}
+#internships h2, h3,h4, p{
+    color: white;
+    text-align: center;
+}
+#internships p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
