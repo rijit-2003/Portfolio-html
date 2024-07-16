@@ -38,7 +38,7 @@ body {
     padding: 10px 10%;
 }
 
-.nav {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,11 +62,12 @@ body {
     font-size: 30px;
     display: inline-block;
     margin-left: 30px;
-    margin-right: 640px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .logo span {
     color: turquoise;
+    
 }
 
 nav ul {
@@ -183,11 +184,6 @@ nav ul li a:hover::after {
     position: relative;
 }
 
-.about-col-2 h1 {
-    color: navy;
-    font-family: 'Poppins', sans-serif;
-}
-
 .about-col-2 p {
     font-size: 19px;
     color: white;
@@ -200,13 +196,6 @@ nav ul li a:hover::after {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-align: center;
-}
-
-#education h1 {
-    padding: 40px;
-    text-align: center;
-    color: navy;
-    font-family: 'Poppins', sans-serif;
 }
 
 .rowedu {
@@ -280,12 +269,6 @@ nav ul li a:hover::after {
     color: white;
 }
 
-#contact h1 {
-    padding: 40px;
-    text-align: center;
-    color: navy;
-    font-family: 'Poppins', sans-serif;
-}
 
 .rowcon {
     display: flex;
@@ -342,7 +325,7 @@ nav ul li a:hover::after {
     text-align: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(163, 29, 29);
+    background-color: rgb(131, 230, 86);
     width: 300px;
     border: 1px solid;
     padding: 50px;
@@ -363,16 +346,11 @@ nav ul li a:hover::after {
 
 .copyright {
     text-align: center;
-    color: green;
+    color: rgb(136, 45, 6);
     margin-top: 20px;
+    font-weight: 400;
 }
 
-#projects h1 {
-    padding: 40px;
-    text-align: center;
-    color: lightgreen;
-    font-family: 'Poppins', sans-serif;
-}
 
 .compskills {
     text-align: center;
@@ -442,120 +420,27 @@ nav ul li a:hover::after {
     font-size: 20px;
     text-align: center;
 }
-/* Media Queries for Responsive Design */
-/* @media (max-width: 1024px) {
-    .container {
-        padding: 10px 5%;
-    }
-    
-    .header-text {
-        margin: 15%;
-        font-size: 24px;
-    }
-
-    .header-text h1 {
-        font-size: 50px;
-    }
-
-    .header-text h3 {
-        font-size: 18px;
-    }
-
-    .introimage {
-        flex-direction: column;
-    }
+.fun {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 10px 2%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .header-text {
-        margin: 10%;
-        font-size: 20px;
-    }
-
-    .header-text h1 {
-        font-size: 40px;
-    }
-
-    .header-text h3 {
-        font-size: 16px;
-    }
-
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
-    }
-
-    .rowskill {
-        flex-direction: column;
-    }
-
-    .skillcol1, .skillcol2 {
-        flex-basis: 100%;
-    }
-    
-    .conleft p {
-        margin: 20px;
-    }
-
-    .conleft h2 {
-        font-size: 20px;
-    }
-
-    .conright img {
-        width: 100%;
-    }
-
-    .conright p {
-        width: 100%;
-        padding: 20px;
-    }
+.fun.visible {
+    opacity: 1;
+}
+.typo{
+    font-weight: 600;
+    font-family: monospace;
+    text-align: center;
+    color: navy;
+    margin: 20px;
+}
+.head {
+    text-align: center; /* Centers the text within the .head div */
+    margin: 0 auto; /* Ensures the .head div itself is centered if it has a fixed width */
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 10px 1%;
-    }
-
-    .header-text {
-        margin: 5%;
-        font-size: 16px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    .header-text h3 {
-        font-size: 14px;
-    }
-
-    .about-col-1 img, .about-col-2 img, .conright img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .rowskill ul li {
-        font-size: 16px;
-    }
-} */
-/* Add this to your existing CSS */
-
-/* Keyframes for jumping animation */
-/* @keyframes jump {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+.head h1 {
+    margin: 0; /* Resets the default margin */
+    padding: 0; /* Resets the default padding */
 }
-
-
