@@ -26,20 +26,47 @@
                 transform: translateY(-10px);
             }
         }
-
-        /* Apply the animation to the social media icons */
-        .social a {
+        .social a{
             display: inline-block;
             margin: 50px;
             animation: jump 1s infinite;
             transition: color 0.3s ease;
         }
-
-        /* Change color to golden on hover */
         .social a:hover {
             color: rgb(48, 53, 160);
         }
+        .compskills img {
+            width: 50px; 
+            height: 50px;
+            margin: 10px; 
+            transition: transform 0.3s ease;
+        }
+        .compskills img:hover {
+            transform: scale(1.1);
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .typo {
+            display: inline-block;
+            overflow: hidden;
+            border-right: .15em solid skyblue;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s , blink-caret .75s step-end infinite;
+            opacity: 0; /* Initially hidden */
+        }
 
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: skyblue }
+        }
     </style>
 </head>
 <nav class="navbar">
@@ -55,7 +82,7 @@
     </ul>
 </nav>
 
-<body style="background-color: skyblue;">
+<body style="background-color: skyblue ;">
     <div id="header">
         <div class="container" style="display:flex;">
             <div class="header-text" style="flex:3">
@@ -67,9 +94,6 @@
                             class="fa-solid fa-location-dot"></i></a> Kolkata, India</h3>
                 <br>           
             </div>
-            <!-- <div class="mypic" style="flex:2;margin-top:10em;" >
-                <img src="images/mypic.jpg" style="width:25em" alt="">
-            </div> -->
         </div>
     </div>
     <div id="about">
@@ -79,17 +103,18 @@
                     <img src="images/mypic2.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="typo">About Me</h1>
+                    <div class="head">
+                        <h1 class="typo">About Me</h1><br><br>
                     <br>
-                    <p>My name is Rijit Banerjee. I am currently pursuing Engineering at one of the Premier Insitutes of
+                    <p class="fun">My name is Rijit Banerjee. I am currently pursuing Engineering at one of the Premier Insitutes of
                         India, Jadavpur University, Kolkata.(NIRF Rank 10, Engineering) </p>
                     <br>
-                    <p>As an aspiring software developer and programmer, I am proficient in languages such as C/C++,
+                    <p class="fun">As an aspiring software developer and programmer, I am proficient in languages such as C/C++,
                         JavaScript, and Python, with hands-on experience in building applications and systems using
                         these languages. Moreover, I have expertise in utilizing frameworks like React.js, Node.js, and
                         Express.js to develop robust, scalable, and efficient solutions to real-world problems.</p>
                     <br>
-                    <p>Outside of the classroom, you'll often find me immersed in coding projects, collaborating with
+                    <p class="fun">Outside of the classroom, you'll often find me immersed in coding projects, collaborating with
                         peers on exciting ventures, or exploring the latest advancements in technology through online
                         courses and hackathons. I thrive in environments that challenge me to think creatively and push
                         the boundaries of what's possible.</p>
@@ -98,6 +123,7 @@
                         <p class="jumping-resume"><a href="https://drive.google.com/file/d/1FTBRKEa5pHuAMIwC-IInr2gus1T0gybY/view?usp=sharing"><i
                                     class="fa-regular fa-file"></i> Resume</a></p>
                     </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,47 +131,41 @@
     </div>
     <div id="education">
         <div class="head">
-            <h1 class="typo">Education</h1>
+            <h1 class="typo">Education</h1><br><br>
         </div>
         <div class="rowedu">
             <div class="educol1">
-                <h2>Jadavpur University</h2>
+                <h2 class="fun">Jadavpur University</h2>
                 <br>
-                <p>Bachelor of Civil Engineering (2021-2025) || Pursuing</p>
+                <p class="fun">Bachelor of Civil Engineering (2021-2025) || Pursuing</p>
                 <br>
-                <p><a
-                        href="https://www.google.com/maps/place/Jadavpur+University/@22.4988822,88.2951946,13z/data=!4m10!1m2!2m1!1sjadavpur+university+google+maps!3m6!1s0x3a0271237f28abe9:0xd047bab0c8bfb11c!8m2!3d22.4988822!4d88.3714123!15sCh9qYWRhdnB1ciB1bml2ZXJzaXR5IGdvb2dsZSBtYXBzIgOIAQGSAQp1bml2ZXJzaXR54AEA!16zL20vMDQ2dm0?entry=ttu"><i
-                        class="fa-solid fa-location-dot"></i> Kolkata</a></p>
             </div>
             <div class="educol2">
-                <h2>Nava Nalanda High School</h2>
+                <h2 class="fun">Nava Nalanda High School</h2>
                 <br>
-                <p>Higher Secondary - 92 % (2019-2021) || Completed</p>
+                <p class="fun">Higher Secondary - 92 % (2019-2021) || Completed</p>
                 <br>
-                <p>Secondary - 91 % (2008-2019) || Completed</p>
+                <p class="fun">Secondary - 91 % (2008-2019) || Completed</p>
                 <br>
-                <p><a
-                        href="https://www.google.com/maps/place/Nava+Nalanda+Group+of+Schools/@22.5143525,88.3472027,17z/data=!3m1!4b1!4m6!3m5!1s0x3a02712b16ea7fed:0x9f1144e27da5dc94!8m2!3d22.5143525!4d88.3472027!16s%2Fm%2F06zkcml?entry=ttu"><i
-                        class="fa-solid fa-location-dot"></i> Kolkata</a></p>
-                <br><br><br><br>
+                <br><br>
             </div>
         </div>
     </div>
     <div id="internships">
         <div class="head">
-            <h1 class="typo" style="color: navy;">Experience</h1><br>
-            <h2>Summer Research Intern</h2><br>
-            <h3 style="color: white;">Indian Institute of Management, Ranchi</h3><br>
+            <h1 class="typo">Experience</h1><br><br>
+            <h2 class="fun">Summer Research Intern</h2><br>
+            <h3 style="color: white;" class="fun">Indian Institute of Management, Ranchi</h3><br><br>
             <div class="incen">
-                <p><i class="fa-solid fa-bolt"></i> Worked on Machine Learning Models.</p>
-                <p><i class="fa-solid fa-bolt"></i> Learned about Partial Least Squares-Structural Equation Modelling.</p>
-                <p><i class="fa-solid fa-bolt"></i> Contributed to an algorithm to check the robustness of the model.</p>
+                <p class="fun"><i class="fa-solid fa-bolt"></i> Worked on Machine Learning Models.</p>
+                <p class="fun"><i class="fa-solid fa-bolt"></i> Learned about Partial Least Squares-Structural Equation Modelling.</p>
+                <p class="fun"><i class="fa-solid fa-bolt"></i> Contributed to an algorithm to check the robustness of the model.</p>
             </div>
         </div>
     </div>
     <div class="compskills">
-        <h1 class="typo">Competitive Programming</h1>
-        <p>I am very much passionate about Competitive Coding and Problem Solving.<br><br>I am rated 1600 at Leetcode which puts me at to 20% of all Leetcode users Worldwide.<br><br>I am a 3 Star Coder at Codechef with a Highest Rating of 1749.</p>
+        <h1 class="typo">Competitive Programming</h1><br>
+        <p class="fun">I am very much passionate about Competitive Coding and Problem Solving.<br><br>I am rated 1600 at Leetcode which puts me at to 20% of all Leetcode users Worldwide.<br><br>I am a 3 Star Coder at Codechef with a Highest Rating of 1749.</p>
         <a href="https://leetcode.com/rijitb" target="_blank"><img src="images/leetcode (1).png" alt="LeetCode Profile"></a>
 <a href="https://codeforces.com/profile/rijitbanerjee08" target="_blank"><img src="images/code-forces (1).png" alt="Codeforces Profile"></a>
 <a href="https://www.codechef.com/users/rijitbanerjee0" target="_blank"><img src="images/codechef (1).png" alt="CodeChef Profile"></a>
@@ -153,12 +173,12 @@
     </div>
     <div id="skills">
         <div class="head">
-            <h1 class="typo" style="color: navy;">Skills</h1><br><br><br>
+            <h1 class="typo">Skills</h1><br><br><br>
         </div>
         <div class="rowskill">
             <div class="skillcol1">
                 <h2>Languages</h2><br><br>
-                <ul>
+                <ul class="fun">
                     <li><i class="fa-brands fa-html5"></i> HTML5</li><br>
                     <li><i class="fa-brands fa-css3-alt"></i> CSS3</li><br>
                     <li><i class="fa-brands fa-js"></i> JavaScript</li><br>
@@ -168,7 +188,7 @@
             </div>
             <div class="skillcol2">
                 <h2>Frameworks</h2><br><br>
-                <ul>
+                <ul class="fun">
                     <li><i class="fa-brands fa-react"></i> React</li><br>
                     <li>Express</li><br>
                     <li><i class="fa-brands fa-node-js"></i> NodeJS</li><br>
@@ -180,7 +200,7 @@
             <br><br>
             <div class="skillcol3">
                 <h2>Coursework</h2><br><br>
-                <ul>
+                <ul class="fun">
                     <li>Computer Programming</li><br>
                     <li>Numerical Methods</li><br>
                     <li>Artificial Intelligence</li><br>
@@ -190,31 +210,15 @@
         </div>
         
     </div>
-    <div id="projects">
-        <!-- <div class="head">
-            <h1 class="projects" class="typo" style="color: #9be915;">Projects</h1><br>
-        </div>
-        <div class="procon">
-            <div class="proleft">
-                <h2>Snake Game</h2>
-                <p>I created a Snake game in Python using PyCharm, featuring classic gameplay where a snake grows longer by eating food, with increasing difficulty as the snake grows.</p>
-            </div>
-            <div class="proright">
-                <h2>Weather Website</h2>
-            </div>
-            <div class="promid">
-                <h2>Portfolio Website</h2>
-            </div>
-        </div> -->
     </div>
     <div id="contact">
         <div class="head">
-            <h1 class="contactme" class="typo" style="color: navy;">Get in Touch</h1><br>
+            <h1 class="typo">Get in Touch</h1><br>
         </div>
         <div class="rowcon">
             <div class="conleft">
                 <!-- <h2 style="color: rgb(22, 117, 117);">Email me at</h2> -->
-                <p class="email"><i class="fa-regular fa-envelope"></i> rijitbanerjeejaduniv@gmail.com</p>
+                <p class="email" class="fun"><i class="fa-regular fa-envelope"></i> rijitbanerjeejaduniv@gmail.com</p>
                 <div class="social">
                     <!-- <h2 style="color: rgb(22, 117, 117);">Follow Me On</h2><br><br><br> -->
                     <a href="https://www.instagram.com/sergeant_coldheart/"><i class="fa-brands fa-instagram"></i>
@@ -225,14 +229,10 @@
                 </div>
                 <a href="#header"><h4><i class="fa-brands fa-space-awesome"></i></h4></a>
             </div>
-            <!-- <div class="conright"> -->
-                <!-- <img src="images/mypic3.jpg">
-                <p style="color: yellowgreen;">You can contact me through email or via LinkedIn. Any suggestions on my existing work or new projects are always welcome. I typically respond to inquiries within 24-48 hours.</p>
-            </div> -->
         </div>
     </div>
     <div class="bottom-container">
-        <p class="copyright">© 2023 Rijit Banerjee.</p>
+        <p class="copyright">© 2023   |   Designed and Maintained by Rijit Banerjee.</p>
       </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
@@ -242,6 +242,49 @@
             backSpeed: 5,
             loop: true
         })
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+    
+            const elements = document.querySelectorAll('.fun');
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('scroll', function() {
+    requestAnimationFrame(function() {
+        var typoElements = document.querySelectorAll('.typo');
+        typoElements.forEach(function(element) {
+            var rect = element.getBoundingClientRect();
+            if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+                element.style.opacity = 1; // Make the text visible
+                element.style.animationPlayState = 'running';
+            } else {
+                element.style.opacity = 0; // Hide the text when it's not in view
+                element.style.animationPlayState = 'paused';
+            }
+        });
+    });
+});
+
+// Set initial animation state to paused
+window.addEventListener('load', function() {
+    var typoElements = document.querySelectorAll('.typo');
+    typoElements.forEach(function(element) {
+        element.style.animationPlayState = 'paused';
+    });
+});
+
     </script>
     I<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
