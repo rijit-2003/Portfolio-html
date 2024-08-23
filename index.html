@@ -11,9 +11,15 @@
     <script src="https://kit.fontawesome.com/9908da2292.js" crossorigin="anonymous"></script>
     <style>
         .navbar {
-            background-color: rgb(11, 22, 76);
+            background-color: rgb(4, 141, 107);
             position: fixed;
             width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 60px; /* Adjust this to account for the fixed navbar height */
         }
         @keyframes jump {
             0%, 20%, 50%, 80%, 100% {
@@ -26,52 +32,77 @@
                 transform: translateY(-10px);
             }
         }
-        .social a{
+        .social a {
             display: inline-block;
             margin: 50px;
             animation: jump 1s infinite;
             transition: color 0.3s ease;
         }
+        
         .social a:hover {
             color: rgb(48, 53, 160);
         }
+        
         .compskills img {
-            width: 50px; 
+            width: 50px;
             height: 50px;
-            margin: 10px; 
+            margin: 10px;
             transition: transform 0.3s ease;
         }
         .compskills img:hover {
             transform: scale(1.1);
         }
-        body {
-            font-family: Arial, sans-serif;
-        }
         .typo {
             display: inline-block;
             overflow: hidden;
-            border-right: .15em solid skyblue;
+            border-right: .15em solid rgb(26, 239, 207);
             white-space: nowrap;
             margin: 0 auto;
             letter-spacing: .15em;
-            animation: typing 3.5s , blink-caret .75s step-end infinite;
+            animation: typing 3.5s, blink-caret .75s step-end infinite;
             opacity: 0; /* Initially hidden */
         }
-
         @keyframes typing {
             from { width: 0 }
             to { width: 100% }
         }
-
         @keyframes blink-caret {
             from, to { border-color: transparent }
-            50% { border-color: skyblue }
+            50% { border-color: rgb(26, 239, 207) }
         }
+        .chess {
+    display: inline-block;
+    margin: 50px;
+    animation: bounce 1.5s infinite, colorChange 3s infinite;
+    transition: color 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff004f;
+    }
+    50% {
+        color: #00bfff;
+    }
+    100% {
+        color: #ff004f;
+    }
+}
+
     </style>
 </head>
+
 <nav class="navbar">
     <h2 class="logo"><span> R</span>ijitBanerjee<span>.</span></h2>
-
     <ul>
         <li><a href="#header">Home <i class="fa-solid fa-house"></i></a></li>
         <li><a href="#about">About <i class="fa-regular fa-address-card"></i></a></li>
@@ -82,17 +113,15 @@
     </ul>
 </nav>
 
-<body style="background-color: skyblue ;">
+<body style="background-color: rgb(26, 239, 207);">
     <div id="header">
-        <div class="container" style="display:flex;">
-            <div class="header-text" style="flex:3">
+        <div class="container" style="display: flex;">
+            <div class="header-text" style="flex: 3">
                 <h1>Hi, I'm <span>Rijit</span></h1>
                 <p>I'm a <span class="auto-type"></span></p>
                 <br>
-                <h3><a
-                        href="https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5354273,88.3473527,12z/data=!3m1!4b1!4m6!3m5!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895!16zL20vMGN2dzk?entry=ttu"><i
-                            class="fa-solid fa-location-dot"></i></a> Kolkata, India</h3>
-                <br>           
+                <h3><a href="https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5354273,88.3473527,12z/data=!3m1!4b1!4m6!3m5!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895!16zL20vMGN2dzk?entry=ttu"><i class="fa-solid fa-location-dot"></i></a> Kolkata, India</h3>
+                <br>
             </div>
         </div>
     </div>
@@ -153,13 +182,52 @@
     </div>
     <div id="internships">
         <div class="head">
-            <h1 class="typo">Experience</h1><br><br>
-            <h2 class="fun">Summer Research Intern</h2><br>
+            <h1 class="typo">Experience</h1>
+            <br><br><br><br>
+            <h2 class="fun" style="color: rgb(0, 106, 255);">Summer Research Intern</h2><br>
             <h3 style="color: white;" class="fun">Indian Institute of Management, Ranchi</h3><br><br>
             <div class="incen">
-                <p class="fun"><i class="fa-solid fa-bolt"></i> Worked on Machine Learning Models.</p>
+                <p class="fun"><i class="fa-solid fa-bolt"></i> Learned about Various Machine Learning Algorithms.</p>
+                <p class="fun"><i class="fa-solid fa-bolt"></i> Worked on Analysis of Disease Prediction Models.</p>
                 <p class="fun"><i class="fa-solid fa-bolt"></i> Learned about Partial Least Squares-Structural Equation Modelling.</p>
-                <p class="fun"><i class="fa-solid fa-bolt"></i> Contributed to an algorithm to check the robustness of the model.</p>
+            </div>
+            <br><br>
+            <h2 style="color: rgb(0, 106, 255);">Core Team Member</h2>
+            <br>
+            <h3 style="color: white;" class="fun">Jadavpur University Science Club</h3>
+            <br><br>
+            <p>Part of Alumni Interaction Series and Blogpage Writing.</p>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="head">
+            <h1 class="typo">Projects</h1>
+            <div class="projectlist">
+                <div>
+                    <h2 style="color: rgb(0, 106, 255);">Snake Game</h2><br>
+                    <p><i class="fa-solid fa-feather-pointed"></i> Recreates the classic Snake arcade game where players control a snake to
+                        eat food and grow while avoiding collisions. <br> <i class="fa-solid fa-feather-pointed"></i> Built in Python using the Turtle module, providing an easy-to-use interface.
+                        <br><i class="fa-solid fa-feather-pointed"></i> Offers engaging gameplay with responsive controls, and a great learning
+                        exercise for Python programming.</p>
+                    <a href="https://github.com/rijit-2003/snakegame"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div>
+                    <h2 style="color: rgb(0, 106, 255);">Sudoku Solver</h2><br>
+                    <p><i class="fa-solid fa-feather-pointed"></i> Developed a Sudoku solver in Python using a backtracking algorithm, demonstrating advanced problem-solving skills in recursion. <br> 
+                        <i class="fa-solid fa-feather-pointed"></i> Implemented efficient search and constraint-checking mechanisms to ensure the solver can handle various Sudoku puzzle complexities and sizes.
+                    <br> </p>
+                    <a href="https://github.com/rijit-2003/sudokusolver"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div>
+                    
+                    <h2 style="color: rgb(0, 106, 255);">Weather Website</h2><br><br>
+                    <p><i class="fa-solid fa-feather-pointed"></i> Integrated with an API to provide real-time weather data including
+                        temperature, sunrise, sunset, wind speed, and humidity for any specified
+                        location.
+                    <br><i class="fa-solid fa-feather-pointed"></i> Designed with a responsive layout to ensure compatibility across various
+                    devices.</p>
+                    <a href="https://github.com/rijit-2003/Weather-Website"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -211,6 +279,14 @@
         
     </div>
     </div>
+    <div id="interests">
+        <div class="head">
+            <h1 class="typo">Interests</h1><br><br>
+        </div>
+        <h2>I love playing Chess in my freetime and I am Rated 1750 in Chess.</h2>
+        <br>
+        <a href="https://www.chess.com/stats/live/rapid/themechanic3000" class="chess"><i class="fa-solid fa-chess-rook"></i>   <i class="fa-solid fa-chess-knight"></i>   <i class="fa-solid fa-chess-bishop"></i>   <i class="fa-solid fa-chess-king"></i>   <i class="fa-solid fa-chess-queen"></i>   <i class="fa-solid fa-chess-bishop"></i>   <i class="fa-solid fa-chess-knight"></i>   <i class="fa-solid fa-chess-rook"></i></a>
+    </div>
     <div id="contact">
         <div class="head">
             <h1 class="typo">Get in Touch</h1><br>
@@ -238,59 +314,58 @@
     <div class="bottom-container">
         <p class="copyright">© 2023   |   Designed and Maintained by Rijit Banerjee.</p>
       </div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Web Developer", "Competitive Programmer", "Problem Solver","M.L. Enthusiast"],
-            typeSpeed: 100,
-            backSpeed: 5,
-            loop: true
-        })
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            });
-    
-            const elements = document.querySelectorAll('.fun');
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-    </script>
-    <script>
-        document.addEventListener('scroll', function() {
-    requestAnimationFrame(function() {
-        var typoElements = document.querySelectorAll('.typo');
-        typoElements.forEach(function(element) {
-            var rect = element.getBoundingClientRect();
-            if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-                element.style.opacity = 1; // Make the text visible
-                element.style.animationPlayState = 'running';
-            } else {
-                element.style.opacity = 0; // Hide the text when it's not in view
-                element.style.animationPlayState = 'paused';
-            }
-        });
-    });
-});
-
-// Set initial animation state to paused
-window.addEventListener('load', function() {
-    var typoElements = document.querySelectorAll('.typo');
-    typoElements.forEach(function(element) {
-        element.style.animationPlayState = 'paused';
-    });
-});
-
-    </script>
-    I<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-
-</html>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+          var typed = new Typed(".auto-type", {
+              strings: ["Web Developer", "Competitive Programmer", "Problem Solver", "M.L. Enthusiast"],
+              typeSpeed: 100,
+              backSpeed: 5,
+              loop: true
+          })
+      </script>
+      <script>
+          document.addEventListener('DOMContentLoaded', () => {
+              const observer = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          entry.target.classList.add('visible');
+                          observer.unobserve(entry.target);
+                      }
+                  });
+              });
+  
+              const elements = document.querySelectorAll('.fun');
+              elements.forEach(element => {
+                  observer.observe(element);
+              });
+          });
+      </script>
+      <script>
+          document.addEventListener('scroll', function () {
+              requestAnimationFrame(function () {
+                  var typoElements = document.querySelectorAll('.typo');
+                  typoElements.forEach(function (element) {
+                      var rect = element.getBoundingClientRect();
+                      if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+                          element.style.opacity = 1; // Make the text visible
+                          element.style.animationPlayState = 'running';
+                      } else {
+                          element.style.opacity = 0; // Hide the text when it's not in view
+                          element.style.animationPlayState = 'paused';
+                      }
+                  });
+              });
+          });
+  
+          // Set initial animation state to paused
+          window.addEventListener('load', function () {
+              var typoElements = document.querySelectorAll('.typo');
+              typoElements.forEach(function (element) {
+                  element.style.animationPlayState = 'paused';
+              });
+          });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
